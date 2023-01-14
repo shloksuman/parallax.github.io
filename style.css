@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato" , sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1 {
+    background-image: url('https://cdn.pixabay.com/photo/2019/09/15/07/31/everest-base-camp-4477525_960_720.jpg');
+    min-height: 100%;
+   
+}
+
+.pimg2 {
+    background-image: url('https://cdn.pixabay.com/photo/2019/03/07/04/52/himalaya-4039495_960_720.jpg');
+    min-height: 400px;
+   
+}
+
+.pimg3 {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/28/20/24/mountains-2691172_960_720.jpg');
+    min-height: 400px;
+   
+}
+.pimg4 {
+    background-image: url('https://cdn.pixabay.com/photo/2013/06/16/10/28/mantra-139634_960_720.jpg');
+    min-height: 724px;
+   
+}
+
+.pimg1, .pimg2 , .pimg3 , .pimg4 {
+    /*given below 4 properties are important*/
+    position: relative;
+    background-position: center;
+    background-size: cover; /* covers full screen */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*GIVES PARALLAX EFFECT*/
+}
+
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textbg {
+    background: #313534;
+    color: aqua;
+}
+
+.section {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+/*CONTAINER AND GIT TO ALIGN THE TEXT AND SVG ICON IN SAME LINE*/
+
+.container {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    
+    
+  }
+
+.git {
+    vertical-align: middle;
+}
+
+.footertext {
+    color: aqua;
+    font-size: 30px;
+}
+
+.footerbg {
+    margin: auto;
+    width: fit-content;
+    background-color: #282e34;
+    border-radius: 4px;
+    transition: 0.3s ease-in; /*if you don't write ease in then you'll see extended box shadow*/
+    padding: 8px;
+    
+}
+
+.footerbg:hover {
+    box-shadow: 5px 10px brown;
+    transition: 0.3s ease-out;
+}
